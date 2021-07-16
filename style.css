@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+
+/* Nav bar */
+
 nav {
     background-color: #2f49cf;
     color: rgba(255, 255, 255, 0.7);
@@ -81,6 +84,19 @@ searchbar input::placeholder {
     background-color: #192b80;
 }
 
+
+/* Objects in main */
+
+.dashObject {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
 
 
 @media only screen and (min-width: 900px) {
