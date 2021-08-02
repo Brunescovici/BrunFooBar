@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
 
 /* Nav bar */
 
@@ -96,6 +100,19 @@ searchbar input::placeholder {
     border-radius: 10px;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+
+#barName {
+    color: #CF4459;
+    margin: 1vh 0 0 2vw;
+    font-family: 'Style Script', cursive;
+    font-size: 3em;
+}
+
+#titleName {
+    color: #576cd9;
+    margin: 1vh 0 0 2vw;
+    font-size: 2em;
 }
 
 
