@@ -5,5 +5,12 @@ fetch("https://brunfoobar.herokuapp.com/")
 function workData(x) {
     console.log(x);
     document.getElementById("barName").textContent = x.bar.name;
-    document.querySelector(".objHeader").textContent = x.bartenders[0].name;
+    x.bartenders.forEach(el => {
+        let tempBody = document.getElementById("objContainer");
+        let template = document.getElementById("objTemplate");
+        let clone = template.content.cloneNode(true);
+        clone.querySelector(".objHeader").textContent = el.name;
+        clone.querySelector(".objText").textContent = el.status;
+        tempBody.appendChild(clone);
+    });
 }

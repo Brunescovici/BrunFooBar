@@ -16,7 +16,7 @@ nav {
     align-items: center;
 }
 
-profile {
+.navItem {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -24,14 +24,14 @@ profile {
     padding-top: 50px;
 }
 
-profile img {
+.navItem img {
     background-size: cover;
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
 
-profile h1 {
+.navItem h1 {
     align-self: center;
     color: white;
     margin-top: 20px;
@@ -91,15 +91,25 @@ searchbar input::placeholder {
 
 /* Objects in main */
 
+#objContainer {
+    display: grid;
+    margin: 2vw 0 1vw 5vw;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+}
+
 .dashObject {
     position: relative;
-    top: 100px;
-    left: 100px;
     width: 200px;
     height: 100px;
     border-radius: 10px;
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
+    border-bottom: 2px solid #2f49cf;
+}
+
+.objHeader {
+    color: #CF4459;
 }
 
 #barName {
@@ -135,6 +145,12 @@ searchbar input::placeholder {
 
 @media only screen and (max-width: 899px) {
     profile {
-        flex-direction: column;
+        flex-direction: row;
+    }
+    profile h1 {
+        display: none;
+    }
+    #navList {
+        flex-direction: row;
     }
 }
