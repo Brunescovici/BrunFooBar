@@ -35,9 +35,11 @@
 </body>
 
 <template id="objTemplate">
-    <article class="dashObject">
+    <article class="dashObject" id="worker">
         <h2 class="objHeader"></h2>
         <p class="objText"></p>
+        <p class="objCustomer"></p>
+        <span id="downArrow" onclick="mouseStatus(this.parentNode.id);">&#8595;</span>
     </article>
 </template>
 

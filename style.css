@@ -94,7 +94,6 @@ searchbar input::placeholder {
 #objContainer {
     display: grid;
     margin: 2vw 0 1vw 5vw;
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 5vw;
 }
 
@@ -141,6 +140,9 @@ searchbar input::placeholder {
     .navItem {
         margin-top: 20px;
     }
+    #objContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media only screen and (max-width: 899px) {
@@ -152,5 +154,26 @@ searchbar input::placeholder {
     }
     #navList {
         flex-direction: row;
+    }
+    #objContainer {
+        grid-auto-flow: row;
+    }
+}
+
+/* ANIMATIONS */
+
+.clickedEl {
+    display: inline-block;
+    animation: clickedElKf 1s forwards;
+}
+
+@keyframes clickedElKf {
+    0% {
+        transform: rotate(0);
+        color: black;
+    }
+    100% {
+        transform: rotate(180deg);
+        color: pink;
     }
 }
