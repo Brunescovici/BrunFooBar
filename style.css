@@ -107,6 +107,23 @@ searchbar input::placeholder {
     border-bottom: 2px solid #2f49cf;
 }
 
+.objStatus {
+    display: none;
+}
+
+.objTapUsed {
+    display: none;
+}
+
+#downArrow {
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+#downArrow:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .objHeader {
     color: #CF4459;
 }
