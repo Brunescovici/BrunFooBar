@@ -24,18 +24,6 @@ nav {
     padding-top: 50px;
 }
 
-.navItem img {
-    background-size: cover;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-}
-
-.navItem h1 {
-    align-self: center;
-    color: white;
-    margin-top: 20px;
-}
 
 searchbar input {
     background-color: #576cd9;
